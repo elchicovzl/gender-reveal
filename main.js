@@ -82,12 +82,18 @@ const createScratchCard = (canvasId, color, results) => {
 
 
                 if (cont == 4) {
+                    const audio = document.getElementById("audio");
+                    audio.play();
                     smokeReveal();
                     confettiFireworks();
                     const elment = document.getElementById("gender-reveal");
                     const elment2 = document.getElementById("gender-reveal2");
+                    const board = document.getElementById("board");
+
                     elment.classList.add("revealed");
                     elment2.classList.add("revealed");
+                    board.classList.add("hide");
+
                 }
             }
 
@@ -180,6 +186,7 @@ const confettiFireworks = () => {
 
 const smokeReveal = () => {
     var canvas = document.getElementById('smoke')
+    canvas.classList.add("revealed");
 	var ctx = canvas.getContext('2d')
 	canvas.width = innerWidth
 	canvas.height = innerHeight
