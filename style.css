@@ -126,6 +126,7 @@ justify-content: space-between;
 
 .gender-reveal2 {
     display: none;
+    width: 100%;
     color: #ffffff;
     top: 60%;
     letter-spacing: unset;
