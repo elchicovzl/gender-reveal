@@ -82,8 +82,6 @@ const createScratchCard = (canvasId, color, results) => {
 
 
                 if (cont == 4) {
-                    const audio = document.getElementById("audio");
-                    audio.play();
                     smokeReveal();
                     confettiFireworks();
                     const elment = document.getElementById("gender-reveal");
